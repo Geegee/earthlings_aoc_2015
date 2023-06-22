@@ -24,9 +24,9 @@ pub fn solve_day1() {
     } else if i == ')' {
       santa_floor -= 1;}
     if santa_floor == -1 && !found {
-      print!("First position Santa is in floor -1: {pos} \n");
+      print!("Santa enteres floor -1 at position: {pos}\n");
       found = true;
     }
   }
-  print!("Final floor Santa ends up in: {santa_floor}") 
+  print!("Santa ends up in floor: {santa_floor}\n") 
 }}
