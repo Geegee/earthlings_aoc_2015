@@ -1,8 +1,7 @@
-pub mod day1_functions {
-use std::fs;
+use std::fs::read_to_string;
 
 pub fn read_file(file_path: &str)-> String {
-  let contents = fs::read_to_string(file_path)
+  let contents = read_to_string(file_path)
     .expect("Should have been able to read the file");
   let mut buf = String::with_capacity(contents.len());
   for c in contents.chars() {
@@ -29,4 +28,5 @@ pub fn solve_day1() {
     }
   }
   print!("Santa ends up in floor: {santa_floor}\n") 
-}}
+}
+
