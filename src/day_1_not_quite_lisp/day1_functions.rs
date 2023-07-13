@@ -16,6 +16,7 @@ pub fn solve_day1() {
   let mut santa_floor:i32 = 0;
   let mut pos:i32 = 0;
   let mut found:bool = false;
+  
   for i in contents.chars() {
     pos += 1;
     if i == '(' {
